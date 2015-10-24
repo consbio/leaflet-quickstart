@@ -11,7 +11,7 @@ mapping applications.
 
 
 ## Style Guide
-See `/docs/style_guide.md` for guidance on visual elements, dependencies, recommended practices, etc.
+See the [style_guide](https://github.com/consbio/leaflet-quickstart/blob/master/docs/style_guide.md) for guidance on visual elements, dependencies, recommended practices, etc.
 
 
 ## Work in progress!

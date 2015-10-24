@@ -42,19 +42,19 @@ Generally, these should be < 1.5 MB compressed.  Smaller is better.
 All feature layers must be in WGS84 geographic coordinate system (`ESPG:4326`).
 
 Unless features and associated properties are very small, include only feature IDs in the topojson, and relate features
-to associated properties in CSV files (see `/examples/feature_attributes.js`).  
+to associated properties in CSV files (see [`/examples/feature_attributes.js`](https://github.com/consbio/leaflet-quickstart/blob/master/examples/feature_attributes.js)).  
 
 We assume that feature IDs are set on each geometry object, rather than contained within properties on each geometry 
 (this creates smaller, less ambiguous files).  
 
-See `\tools\set_topojson_ids.py` for a Python script that does this.
+See [`/tools/set_topojson_ids.py`](https://github.com/consbio/leaflet-quickstart/blob/master/tools/set_topojson_ids.py) for a Python script that does this.
 
 
 If much larger features layers are required, a different approach is necessary.  
 * [geojson-vt](https://github.com/mapbox/geojson-vt)
 * [Leaflet.UTFGrid](https://github.com/consbio/Leaflet.UTFGrid)
 
-Pre-rendering to tiles using `mapnik`, and hosting on AWS S3 is also an option 8where interaction is not required and
+Pre-rendering to tiles using `mapnik`, and hosting on AWS S3 is also an option where interaction is not required and
 styling is not updated dynamically.
 
 
@@ -85,7 +85,7 @@ Good ones to include, depending on need:
 * [nvd3](http://nvd3.org/)
 
 ### Documentation
-For generally applicable functionality, we are trying to use [JSDoc](http://usejsdoc.org/).  See `/static/utils.js` for
+For generally applicable functionality, we are trying to use [JSDoc](http://usejsdoc.org/).  See [`/static/utils.js`](https://github.com/consbio/leaflet-quickstart/blob/master/static/utils.js) for
 examples.
 
 
@@ -107,10 +107,10 @@ TODO: add example Jake file here.
 
 All static resources that can be compressed via `gzip` should be compressed.
 
-See `/tools/create_version.py` for a Python tool that pulls out static resources and pushes them into a version ready for
+See [`/tools/create_version.py`](https://github.com/consbio/leaflet-quickstart/blob/master/tools/create_version.py) for a Python tool that pulls out static resources and pushes them into a version ready for
 deployment.  (TODO: this needs to be completely overhauled and likely rolled into the following).
 
-See `/tools/deploy` for a Python command-line tool that pushes a defined version to AWS S3.  It requires a `deploy_settings.py` file
+See [`/tools/deploy`](https://github.com/consbio/leaflet-quickstart/blob/master/tools/deploy.py) for a Python command-line tool that pushes a defined version to AWS S3.  It requires a `deploy_settings.py` file
 with the following global variables:
 
 ```

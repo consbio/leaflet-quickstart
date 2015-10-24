@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="deps/leaflet.css" />
+    <link rel="stylesheet" href="deps/L.Control.Geonames.css" />
+    <link rel="stylesheet" href="deps/L.Control.ZoomBox.css" />
+    <link rel="stylesheet" href="static/main.css" />
+</head>
+<body>
+    <script src="deps/leaflet.js"></script>
+    <!--<script src="deps/leaflet-omnivore.min.js"></script>-->
+    <script src="deps/L.Control.Geonames.min.js"></script>
+    <script src="deps/L.Control.ZoomBox.min.js"></script>
+    <script src="deps/d3.min.js"></script>
+    <!--<script src="deps/lodash.min.js"></script>-->
+
+    <div id="Header">
+        <div id="LearnMoreButton" class="right button small button-open" data-target="LearnMorePopup">Learn More</div>
+        <img src="static/img/logo.jpg" align="left" />
+        <h3 class="left">Page Title</h3>
+        <div class="clear"></div>
+    </div>
+
+    <div id="Main">
+        <div id="SidebarToggle" class="button-open" data-target="Sidebar" title="Click for details">
+           <i class="fa fa-info-circle"></i>
+        </div>
+
+        <div id="Sidebar">
+            <div class="right">
+                <i class="fa fa-times-circle button-close" data-target="Sidebar"></i>
+            </div>
+            <ul class="tabs small">
+                <li class="active" data-tab="Tab1">Tab 1</li>
+                <li data-tab="Details">Tab 2</li>
+            </ul>
+            <div id="Tab1" class="tab"></div>
+            <div id="Tab2" class="tab hidden"></div>
+        </div>
+
+        <div id="Map"></div>
+
+        <div id="Legend" class="map-panel">
+            Legend goes here...
+        </div>
+    </div>
+    <div id="Footer" class="small">
+        <ul>
+            <li>
+                <a href="#" >Access Data</a>
+            </li>
+            <li class="small right">
+                Created by the
+                <a href="http://consbio.org" target="_blank">Conservation Biology Institute</a>
+                <img src="static/img/CBI_logo_sm.png" align="right" style="margin-left: 6px; height:20px;box-shadow:1px 1px 3px #000;"/>
+            </li>
+        </ul>
+    </div>
+
+    <div id="LearnMorePopup" class="modal hidden">
+        <div>
+            <div>
+                <div class="right">
+                    <i class="fa fa-times-circle button-close" data-target="LearnMorePopup"></i>
+                </div>
+                <h3>Title</h3>
+            </div>
+            <div>
+                <p>
+                    The purpose of this viewer is to ...
+                </p>
+                <div class="clear small">
+                    <h5 class="nomargin">Data credits:</h5>
+                    <ul style="margin: 2px 0 14px;">
+                        <li>Credits...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<script src="static/utils.js"></script>-->
+    <script src="static/main.js"></script>
+</body>
+</html>

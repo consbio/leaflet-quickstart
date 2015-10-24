@@ -1,0 +1,284 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #3182bd;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Core classes */
+.center {
+    text-align: center;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.quiet {
+    color: #666;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.button {
+    color: #888;
+    background: #F6F6F6;
+    border: 1px solid #AAA;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.button:hover {
+    color: #333;
+    border-color: #888;
+    box-shadow: 1px 1px 3px #666;
+}
+
+.button-close {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.inline-top {
+    display: inline-block !important;
+    vertical-align: top;
+}
+.inline-middle {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+/* intended to be setup as a leaflet control to coordinate layout with other controls */
+.map-panel {
+    background: #FFF;
+    border: 4px solid #FFF;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    border-radius: 4px;
+    overflow: hidden;
+    pointer-events: none;
+}
+/* End core classes */
+
+
+/* Tabs Widget */
+.tabs {
+    list-style: none;
+    margin: 0;
+    padding: 4px 10px 0;
+    background-color: #AAA;
+    color: white;
+}
+.tabs > li {
+    display: inline-block;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+}
+.tabs > li:hover {
+    background-color: #BBB;
+}
+.tabs > li.active {
+    font-weight: bold;
+    background: #FFF;
+    color: #333;
+}
+/* End Tabs Widget */
+
+
+/* Modal Dialog */
+/* first element is actually the background scrim */
+.modal {
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.modal > div {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background: #F6F6F6;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #000;
+    padding: 10px;
+}
+.modal > div > div:first-child {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.modal > div > div:first-child > h3 {
+    margin: 0;
+}
+.modal .button-close {
+    font-size: 1.3em;
+    color: #888;
+    padding: 0;
+}
+.modal .button-close:hover {
+    color: #333;
+}
+/* End Modal Dialog */
+
+
+
+/* Leaflet overrides */
+.leaflet-control-layers-toggle {
+    background-image: none;
+    width: auto;
+    height: auto;
+    padding:4px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+/* End Leaflet overrides */
+
+
+
+/* Page elements */
+#Header {
+    height:34px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background: #587387;
+    background: linear-gradient(left, #587387 0%,#AEC0CE 100%);
+    background: -webkit-linear-gradient(left, #587387 0%,#AEC0CE 100%);
+    color: white;
+    border-bottom: 2px solid #202C45;
+}
+#Header img {
+    margin: 2px 10px 2px 4px;
+    height: 30px;
+}
+#Header h3 {
+    margin:4px 6px;
+    text-shadow: 1px 1px 2px #333;
+}
+#Header .button {
+    margin: 3px 6px 0 0;
+}
+
+#Footer {
+    height:28px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: #587387;
+    border-top: 2px solid #202C45;
+}
+#Footer > ul {
+    list-style: none;
+    margin: 4px 4px 0;
+    padding: 0;
+}
+#Footer > ul > li {
+    display: inline-block;
+    padding-left: 16px;
+}
+#Footer > ul > li:first-child {
+    padding-left: 8px;
+}
+#Footer a {
+    color: white !important;
+}
+
+#Main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 36px;
+    bottom: 30px;
+}
+
+#Sidebar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%; /* note: this may need to be hardcoded depending on contents */
+    border-right: 2px solid #333;
+    background-color: #FFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#Sidebar .button-close {
+    color: #EEE;
+}
+#Sidebar .button-close:hover {
+    color: #FFF;
+}
+
+#SidebarToggle {
+    position: relative;
+    z-index: 100;
+    top: 5px;
+    width: 20px;
+    font-size: 20px;
+    padding: 4px 6px;
+    background-color: #FFF;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    cursor: pointer;
+}
+#SidebarToggle:hover {
+    background-color: #f4f4f4;
+}
+
+#Map {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1;
+}

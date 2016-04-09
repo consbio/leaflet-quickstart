@@ -3,62 +3,95 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Page Title</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="deps/leaflet.css" />
-    <link rel="stylesheet" href="deps/L.Control.Geonames.css" />
-    <link rel="stylesheet" href="deps/L.Control.ZoomBox.css" />
-    <link rel="stylesheet" href="static/main.css" />
+    <link rel="stylesheet" href="static/dist/all.min.css" />
 </head>
 <body>
-    <script src="deps/leaflet.js"></script>
-    <!--<script src="deps/leaflet-omnivore.min.js"></script>-->
-    <script src="deps/L.Control.Geonames.min.js"></script>
-    <script src="deps/L.Control.ZoomBox.min.js"></script>
-    <script src="deps/d3.min.js"></script>
-    <!--<script src="deps/lodash.min.js"></script>-->
 
-    <div id="Header">
-        <div id="LearnMoreButton" class="right button small button-open" data-target="LearnMorePopup">Learn More</div>
-        <img src="static/img/logo.jpg" align="left" />
-        <h3 class="left">Page Title</h3>
-        <div class="clear"></div>
-    </div>
-
-    <div id="Main">
-        <div id="SidebarToggle" class="button-open" data-target="Sidebar" title="Click for details">
-           <i class="fa fa-info-circle"></i>
+    <div class="table fullwidth fullheight">
+        <div class="page-header table-row fullwidth">
+            <div class="right button small button-open" data-target="LearnMorePopup">Learn More</div>
+            <img src="static/img/logo.png" align="left" />
+            <h3 class="left">Page Title</h3>
+            <div class="clear"></div>
         </div>
 
-        <div id="Sidebar">
-            <div class="right">
-                <i class="fa fa-times-circle button-close" data-target="Sidebar"></i>
+        <div class="page-body table fullwidth fullheight">
+            <div class="sidebar sidebar-left table-cell fullheight">
+                <div class="table fullheight fullwidth">
+                    <!-- header row -->
+                    <div class="table-row fullwidth">
+                        <ul class="tabs sidebar-header">
+                            <li class="active" data-tab="Tab1">Tab1</li>
+                            <li data-tab="Tab2">Tab2</li>
+                        </ul>
+
+                        <div id="DetailsHeader" class="hidden">
+                            <div style="padding: 0px 6px;">
+                                <div class="right">
+                                    <i id="DetailsClose" class="fa fa-times-circle"></i>
+                                </div>
+                                <h4>Details header</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content row -->
+                    <div class="table-row fullwidth fullheight">
+                        <div class="pos-rel fullwidth fullheight">
+                            <div class="pos-abs fillspace scrolly">
+                                <div id="MainSidebar">
+                                    <div id="Tab1" class="tab">
+                                        <p>
+                                            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+                                            <br/><br/>
+                                            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+                                            <br/><br/>
+                                            Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+                                            <br/><br/>
+                                            Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.
+                                            <br/><br/>
+                                            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+                                            <br/><br/>
+                                            Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+                                            <br/><br/>
+                                            Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.
+                                            <br/><br/>
+                                            Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato.
+                                        </p>
+                                    </div>
+                                    <div id="Tab2" class="tab hidden">
+                                        <p>
+                                            This is the content for tab2
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- This div could be used to contain details for a feature from the map -->
+                                <div id="Details" class="hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="tabs small">
-                <li class="active" data-tab="Tab1">Tab 1</li>
-                <li data-tab="Details">Tab 2</li>
+
+            <div id="Map" class="map-container table-cell fullheight"></div>
+        </div>
+        <div class="page-footer table-row small">
+            <ul>
+                <li class="small right">
+                    Created by the
+                    <a href="http://consbio.org" target="_blank">Conservation Biology Institute</a>
+                    <img src="static/img/CBI_logo_sm.png" align="right" style="margin-left: 6px; height:20px;box-shadow:1px 1px 3px #000;"/>
+                </li>
             </ul>
-            <div id="Tab1" class="tab"></div>
-            <div id="Tab2" class="tab hidden"></div>
-        </div>
-
-        <div id="Map"></div>
-
-        <div id="Legend" class="map-panel">
-            Legend goes here...
         </div>
     </div>
-    <div id="Footer" class="small">
-        <ul>
-            <li>
-                <a href="#" >Access Data</a>
-            </li>
-            <li class="small right">
-                Created by the
-                <a href="http://consbio.org" target="_blank">Conservation Biology Institute</a>
-                <img src="static/img/CBI_logo_sm.png" align="right" style="margin-left: 6px; height:20px;box-shadow:1px 1px 3px #000;"/>
-            </li>
-        </ul>
+
+    <div id="Legend" class="map-panel">
+        Legend goes here
     </div>
+
+    <div id="Basemaps" class="basemaps closed"></div>
 
     <div id="LearnMorePopup" class="modal hidden">
         <div>
@@ -82,8 +115,19 @@
         </div>
     </div>
 
+    <div id="IEAlert" class="modal alert hidden">
+        <div class="center">
+            <h1>
+                <i class="fa fa-exclamation-triangle"></i>
+                <br/>
+                You are using an unsupported version of Internet Explorer.
+            </h1>
+            Please <a href="https://www.microsoft.com/en-us/windows/microsoft-edge#6rxB9czcCIb8mG8j.97" target="_blank">upgrade your browser</a>
+            or use
+            <a href="https://www.google.com/chrome/browser/features.html" target="_blank">Google Chrome.</a>
+        </div>
+    </div>
 
-    <!--<script src="static/utils.js"></script>-->
-    <script src="static/main.js"></script>
+    <script src="static/dist/all.min.js"></script>
 </body>
 </html>

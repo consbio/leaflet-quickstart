@@ -13,9 +13,28 @@ mapping applications.
 ## Work in progress!
 Pretty much anything is subject to change at this point.
 
+## Setup
 
-## Core Dependencies 
+Run `npm install` to pull down required dependencies after you checkout this project.
+
+
+
+## Build process
+
+This project uses Gulp to minify and concatenate CSS and JS files.
+
+Run `gulp build` to run the build, which produces artifacts in `static/dist`.
+
+Run `gulp` to run gulp watch and update built files after you change the sources.
+
+
+
+## Core Dependencies
 * Leaflet (1.0b2)
-* D3 (3.5.6)
+* Leaflet Omnivore
+* D3
+* Lodash
+* Font Awesome
 * [Leaflet.ZoomBox](https://github.com/consbio/Leaflet.ZoomBox)
 * [Leaflet.Geonames](https://github.com/consbio/Leaflet.Geonames)
+* [Leaflet.Basemaps](https://github.com/consbio/Leaflet.Basemaps)

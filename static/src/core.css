@@ -1,0 +1,251 @@
+/*
+Core classes meant to be common across instances of Leaflet applications
+Override these, do not modify this file.
+*/
+
+/* TODO: incorporate PostCSS */
+
+
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h4, h5 {
+    margin: 4px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3182bd;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+.pos-rel {
+    position: relative;
+}
+.pos-abs {
+    position: absolute;
+}
+.fullwidth {
+    width: 100%;
+}
+.fullheight{
+    height: 100%;
+}
+
+.table {
+    display: table;
+    table-layout: fixed;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+.fillspace {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.scrolly {
+    overflow-y: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.quiet {
+    color: #666;
+}
+.quieter {
+    color: #AAA;
+}
+.bold {
+    font-weight: bold;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.button {
+    color: #888;
+    background: #F6F6F6;
+    border: 1px solid #AAA;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.button:hover {
+    color: #333;
+    border-color: #888;
+    box-shadow: 1px 1px 3px #666;
+}
+
+.button-close {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.inline-top {
+    display: inline-block !important;
+    vertical-align: top;
+}
+.inline-middle {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.divider {
+    height: 1px;
+    border-top: 1px solid #AAA;
+    margin: 6px 0;
+}
+.divider.divider-light {
+    border-color: #EEE;
+}
+
+.badge {
+    background: #333;
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    padding: 0.2em 0.5em;
+    border-radius: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/* intended to be setup as a leaflet control to coordinate layout with other controls */
+.map-panel {
+    background: #FFF;
+    border: 4px solid #FFF;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    border-radius: 4px;
+    overflow: hidden;
+    /*pointer-events: none;*/
+}
+
+
+.page-header {
+    height:34px;
+    background: #587387;
+    background: linear-gradient(left, #b8673d 0, #646D5A 60px, #a6b398 100%);
+    background: -webkit-linear-gradient(left, #b8673d 0, #646D5A 60px, #a6b398 100%);
+    color: white;
+}
+.page-header img {
+    margin: 2px 10px 2px 4px;
+    height: 30px;
+}
+.page-header h3 {
+    margin:4px 6px;
+    text-shadow: 1px 1px 2px #333;
+}
+.page-header .button {
+    margin: 3px 6px 0 0;
+}
+
+.page-body {
+    border-top: 2px solid #333;
+}
+
+.page-footer {
+    height:28px;
+    color: white;
+    background: #646D5A;
+    border-top: 2px solid #333;
+}
+.page-footer > ul {
+    list-style: none;
+    margin: 4px 4px 0;
+    padding: 0;
+}
+.page-footer > ul > li {
+    display: inline-block;
+    padding-left: 16px;
+}
+.page-footer > ul > li:first-child {
+    padding-left: 8px;
+}
+.page-footer a {
+    color: white !important;
+}
+
+.sidebar {
+    background-color: #FFF;
+    overflow: hidden;
+}
+.sidebar .tab {
+    padding: 16px;
+}
+.sidebar-left {
+    width: 470px;
+    border-right: 2px solid #AAA;
+}
+
+.map-container {
+    display: table-cell;
+    height: 100%;
+}
+
+
+
+

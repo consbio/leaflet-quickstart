@@ -3,6 +3,10 @@
 *.json
 *.csv
 
-static/img/*
+build/*
 
+static/dist/*
+static/fonts/*
+static/images/*
 
+node_modules/*

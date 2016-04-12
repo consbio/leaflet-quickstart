@@ -1,8 +1,5 @@
 .idea/*
 
-*.json
-*.csv
-
 build/*
 
 static/dist/*
